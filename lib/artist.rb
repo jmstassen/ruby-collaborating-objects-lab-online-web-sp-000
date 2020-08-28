@@ -32,8 +32,8 @@ class Artist
       end
     end
     if @found == false
-      name = Artist.new(name)
-      return name
+      artist = Artist.new(name)
+      return artist
     else
     end
   end

@@ -22,7 +22,7 @@ class Song
     new_instance_artist = filename_array[0].strip
     Artist.all.each do |artist|
       if artist.name == new_instance_artist
-        new_instance.artist = artist
+        new_instance_artist = artist
       else
       end
     end

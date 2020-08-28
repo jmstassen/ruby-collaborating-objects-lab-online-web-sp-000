@@ -21,9 +21,6 @@ class Song
     # binding.pry
     new_instance_artist = filename_array[0].strip
     Artist.find_or_create_by_name(new_instance_artist)
-      else
-      end
-    end
   end
 
   def artist_name=(artist_name)

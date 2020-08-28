@@ -28,8 +28,8 @@ class Song
     song_name = filename.split(" - ")[1]
     new_instance = Song.new(song_name)
     artist = Artist.find_or_create_by_name(artist_name)
-    artist.songs << song
-    song
+    artist.songs << new_instance
+    new_instance
   end
 
 

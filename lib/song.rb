@@ -20,7 +20,7 @@ class Song
     new_instance = Song.new(song)
     # binding.pry
     new_instance_artist = filename_array[1].strip
-    Artist.find_or_create_by_name(new_instance_artist)
+    new_instance.artist = Artist.find_or_create_by_name(new_instance_artist)
   end
 
   def artist_name=(artist_name)

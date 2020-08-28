@@ -20,9 +20,9 @@ class Song
     new_instance = Song.new(song)
     # binding.pry
     new_instance_artist = filename_array[0].strip
-    Artist.all.each do |new_artist|
-      if new_artist.name == new_instance_artist
-        new_instance.artist = new_artist
+    Artist.all.each do |existing_artist|
+      if existing_artist.name == new_instance_artist
+        new_instance.artist = existing_artist
       else
       end
     end

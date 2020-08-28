@@ -46,4 +46,8 @@ class Artist
       end
     end
   end
+
+  def name
+    @name
+  end
 end

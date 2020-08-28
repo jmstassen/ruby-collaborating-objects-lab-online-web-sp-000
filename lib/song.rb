@@ -16,10 +16,10 @@ class Song
 
   def self.new_by_filename(filename)
     filename_array = filename.split(/[-]/)
-    song = filename_array[1].strip
+    song = filename_array[0].strip
     new_instance = Song.new(song)
     # binding.pry
-    new_instance_artist = filename_array[0].strip
+    new_instance_artist = filename_array[1].strip
     Artist.find_or_create_by_name(new_instance_artist)
   end
 

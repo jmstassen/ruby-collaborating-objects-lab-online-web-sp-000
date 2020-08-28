@@ -47,4 +47,8 @@ class Artist
     end
   end
 
+  def name
+    self.name
+  end
+
 end

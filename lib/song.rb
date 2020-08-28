@@ -1,3 +1,4 @@
+require 'pry'
 class Song
 
   attr_accessor :artist, :name
@@ -17,6 +18,7 @@ class Song
     filename_array = filename.split(/[-]/)
     song = filename_array[1].strip
     new_instance = Song.new(song)
+    binding.pry
     new_instance_artist = filename_array[0].strip
     Artist.all.each do |artist|
       if artist == new_instance_artist
